@@ -1,0 +1,32 @@
+jQuery position()
+
+The jQuery position () method makes you able to retrieve the current position of an element relative to the parent element. It returns the position of the first matched element. 
+This method returns the object with two properties: top and left position in pixels.
+
+The jQuery position() method is different from jQuery offset() method because the position() method retrieves the current position of an element relative to the
+parent element while the offset() method retrieves the current position relative to the document.
+The position() method is more useful when you want to position a new element near another one within the same containing DOM element.
+
+
+--------------------
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        var x = $("p").position();  
+        alert("Top position: " + x.top + " Left position: " + x.left);  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>You are reading this tutorial on javatpoint.com</p>  
+<button>Click here to return the offset coordinates of the p element</button>  
+</body>  
+</html>  
+
+ 
