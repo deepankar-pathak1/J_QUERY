@@ -1,0 +1,39 @@
+Difference between jQuery attr() and jQuery prop() method:
+This is a very common question because most of the people are confused about where to use prop() method and where attr() method. The differences between them are very important in specific situation.
+
+Following is the exact differences between them:
+
+The jQuery attr() method is used to retrieve the HTML attribute values while jQuery prop() method is used to retrieve the property values.
+The attr() method changes the attribute of the HTML tag while the prop() method changes a property for the HTML tag as per the DOM tree.
+Properties are generally simpler to deal with than attributes so the jQuery prop() method is mostly used rather than attr() method.
+
+--------------------------
+
+
+
+
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        var $x = $("div");  
+        $x.prop("color","#e0eeee");  
+        $x.append("The value of the color property: " + $x.prop("color"));  
+        $x.removeProp("color");  
+        $x.append("<br>Now the value of the color property: " + $x.prop("color"));  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<button>Add and remove a property</button><br><br>  
+<div></div>  
+</body>  
+</html>  
+
+ 
