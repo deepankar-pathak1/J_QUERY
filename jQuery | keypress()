@@ -1,0 +1,12 @@
+jQuery | keypress()
+
+
+The keypress() method in jQuery triggers the keypress event whenever browser registers a keyboard input.
+So, Using keypress() method it can be detected if any key is pressed or not.
+Syntax:
+To trigger the keypress event for the selected elements:
+
+$(selector).keypress()
+To attach a function to the keypress event:
+
+$(selector).keypress(function) 
