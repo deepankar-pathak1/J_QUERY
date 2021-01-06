@@ -1,0 +1,44 @@
+jQuery unbind() method
+The unbind() method in jQuery is used to remove the event handlers from the selected elements.
+We can also use this method to remove all or specific event handlers. It can also be used to stop specified functions.
+
+Syntax
+$(selector).unbind(event,function,eventObj)  
+
+------------------
+
+
+In this example, there are two h3 heading elements and a button. On hovering the elements with text Hover me, the mouseover event will be attached to them.
+
+Here, we are using the unbind() function to unbind the mouseover event.
+We can check the working of the unbind() method by first hovering an h3 element and then clicking the given button. 
+On hovering, the style of h3 heading will get changed, and when we click the given button, the hovering will not affect another h3 element.
+--------------------
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+<script>
+   $(document).ready(function(){
+   $("h3").bind("mouseover",function(){
+	   $(this).css({"background-color": "pink", "font-size": "25px"}).text("Hovered");
+      });
+      $("#b3").click(function(){
+         $("h3").unbind("mouseover");
+      });
+   });
+</script>
+</head>
+<body>
+<h2> It is an example of using the jQuery unbind() method. </h2>
+<p> Move the cursor over the below heading to attach the mouseover event. </p>
+<h3> Hover me </h3>
+<button id = "b3"> Remove event </button>
+<h3> Hover me </h3>
+</body>
+</html>
+
+ 
