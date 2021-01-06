@@ -1,0 +1,33 @@
+jQuery width()
+jQuery width() method is used to return or set the width of matched element.
+
+To return width: When this method is used to return the width, it returns the width of first matched element.
+
+To set width:When this method is used to set the width, it sets the width for every matched element.
+
+
+-----------------------
+
+
+
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Width of div: " + $("div").width());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<div style="height:100px;width:200px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"></div><br>  
+<button>Execute the jQuery width() method to return width</button>  
+</body>  
+</html>  
+
+ 
