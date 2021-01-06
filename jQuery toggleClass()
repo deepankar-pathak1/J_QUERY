@@ -1,0 +1,37 @@
+jQuery toggleClass()
+The jQuery toggleCLass() method is used to add or remove one or more classes from the selected elements. 
+This method toggles between adding and removing one or more class name. It checks each element for the specified class names. If the class name is already set, it removes and if the class name is missing, it adds.
+
+In this way, it creates the toggle effect. It also facilitates you to specify to only add or only remove by the use of switch parameter.
+
+$(selector).toggleClass(classname,function(index,currentclass),switch)  
+
+------------------------------------
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("p").toggleClass("main");  
+    });  
+});  
+</script>  
+<style>  
+.main {  
+    font-size: 150%;  
+    color: red;  
+}  
+</style>  
+</head>  
+<body>  
+<button>Toggle class "main" for p elements</button>  
+<p>Hello! javatpoint.com</p>  
+<p>This is popular tutorial website.</p>  
+<p><b>Note:</b> Click repeatedly on the button to see the toggle effect.</p>  
+</body>  
+</html>  
+
+ 
