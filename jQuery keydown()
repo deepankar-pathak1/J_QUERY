@@ -1,0 +1,36 @@
+jQuery keydown()
+When you press a key on the keyboard, the keydown() event is occurred and once the keydown() event is occurred, 
+it executes the function associated with keydown() method to run.
+
+The keydown() event is generally used with two other events.
+
+Keypress() event: It specifies that the key is pressed down.
+Keyup() event: It specifies that the key is released.
+Syntax
+
+----
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("input").keydown(function(){  
+        $("input").css("background-color", "green");  
+    });  
+    $("input").keyup(function(){  
+        $("input").css("background-color", "violet");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+Write something: <input type="text">  
+</body>  
+</html>
+
+ 
+
+
