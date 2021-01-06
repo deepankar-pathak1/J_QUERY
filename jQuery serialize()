@@ -1,0 +1,32 @@
+jQuery serialize()
+jQuery serialize() method is used to create a text string in standard URL-encoded notation. 
+It is used in form controls like <input>, <textarea>, <select> etc. It serializes the form values so that its serialized values can be used in the URL query string while making an AJAX request.
+
+Syntax:
+
+$ (selector).serialize()
+-----------------
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("div").text($("form").serialize());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<form action="">  
+  First name: <input type="text" name="FirstName" value="Sonoo"><br>  
+  Last name: <input type="text" name="LastName" value="Jaiswal"><br>  
+</form>  
+<button>Serialize form values</button>  
+<div></div>  
+</body>  
+</html>  
+
+ 
