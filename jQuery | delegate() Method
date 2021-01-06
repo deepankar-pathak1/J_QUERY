@@ -1,0 +1,48 @@
+The delegate() Method in jQuery is used to add one or more event handlers to the specified element that are children of selected elements 
+and are also used to specify a function to run whenever the event occurs.
+
+Syntax
+
+$(selector).delegate( childSelector, event, data, function )
+Parameter: This method accepts four parameters as mentioned above and described below:
+
+childSelector: It is required parameter and used to specify one or more child elements attached to the event handler.
+event: It is required parameter and used to specify one or more events attached to the elements. Multiple event values are separated by space and it must be a valid event.
+data: It is an optional parameter and used to specify the additional data to pass along the function.
+function: It is required parameter and used to specify the function to run when the event occurs.
+
+
+----------------
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <title>delegate demo</title>  
+  <style>  
+  p {  
+    background: yellow;  
+    font-weight: bold;  
+    cursor: pointer;  
+    padding: 5px;  
+  }  
+  p.over {  
+    background: #ccc;  
+  }  
+  span {  
+    color: red;  
+  }  
+  </style>  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+</head>  
+<body>  
+<p>This is a single paragraph. Click me for next.</p>  
+<script>  
+$( "body" ).delegate( "p", "click", function() {  
+  $(this ).after( "<p>Click me for another paragraph.</p>" );  
+});  
+</script>  
+</body>  
+</html>  
+
+ 
