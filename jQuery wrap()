@@ -1,0 +1,37 @@
+jQuery wrap()
+jQuery wrap() method is used to wrap specified HTML elements around each selected element. 
+The wrap () function can accept any string or object that could be passed through the $() factory function.
+
+
+$(selector).wrap(wrappingElement,function(index))   
+
+
+
+
+
+
+------------------
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("p").wrap("<div></div>");  
+    });  
+});  
+</script>  
+<style>  
+div{background-color: pink;}  
+</style>  
+</head>  
+<body>  
+<p>Hello Guys!</p>  
+<p>This is javatpoint.com</p>  
+<button>Wrap a div element around each p element</button>  
+</body>  
+</html>  
+
+ 
