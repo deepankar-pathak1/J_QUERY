@@ -1,0 +1,32 @@
+jQuery keyup()
+The jQuery keyup() event occurs when a keyboard button is released after pressing.
+This method is executed or attach a function to run when a keyup() event occurs.
+
+
+-------------
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("input").keydown(function(){  
+        $("input").css("background-color", "red");  
+    });  
+    $("input").keyup(function(){  
+        $("input").css("background-color", "yellow");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+Write something: <input type="text">  
+</body>  
+</html> 
+
+ 
+-------
+
+when we press the input,background color is changed to red and (keydown() in simple term when we press something on input )
+when we release or dont type anything it will change color from red to yellow and this process goes on (keyup() in simple term when we don't type anything on input)
