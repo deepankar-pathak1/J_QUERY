@@ -1,0 +1,43 @@
+jQuery change()
+jQuery change event occurs when the value of an element is changed. 
+It works only on form fields. When the change event occurs, the change () method attaches a function with it to run.
+
+Note: This event is limited to <input> elements, <textarea> boxes and <select> elements.
+
+For select boxes, checkboxes, and radio buttons: The event is fired immediately when the user makes a selection with the mouse.
+For the other element types: The event is occurred when the field loses focus.
+
+----
+
+
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+  <meta charset="utf-8">    
+  <title>change demo</title>    
+  <style>    
+  div {    
+    color: red;    
+  }    
+  </style>    
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>    
+</head>    
+<body>    
+ <select id="se" name="actors" >    
+  <option>Uthappa</option>    
+  <option selected="selected">Kattapa</option>    
+  <option>Veerappa</option>    
+  <option>Bahubali</option>    
+  <option>Bhallal Dev</option>    
+  <option>Awantika</option>    
+</select>    
+<div id="loc"></div>    
+ <script>    
+$( "select" ) .change(function () {    
+document.getElementById("loc").innerHTML="You selected: "+document.getElementById("se").value;  
+});  
+</script>    
+ </body>    
+</html>   
+
+ 
