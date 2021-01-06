@@ -1,0 +1,36 @@
+jQuery hover()
+The jQuery hover() method executes two functions when you roam the mouse pointer over the selected element. 
+
+The hover() method triggers both the mouseenter and mouseleave events.
+
+Syntax:
+
+$(selector).hover(inFunction,outFunction) 
+
+Parameter	Description
+
+InFunction	It is a mandatory parameter. It is executed the function when mouseenter event occurs.
+OutFunction	It is an optional parameter. It is executed the function when mouseleave event occurs.
+
+------------
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("p").hover(function(){  
+        $(this).css("background-color", "violet");  
+        }, function(){  
+        $(this).css("background-color", "green");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Hover your mouse pointer on me!</p>  
+</body>  
+</html>  
+
+ 
