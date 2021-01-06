@@ -1,0 +1,15 @@
+jQuery mousedown()
+The mousedown() method adds an event handler function to an HTML element. 
+This function is executed, when the left mouse button is pressed down, at the time while the mouse is over the HTML element.
+
+This event is generally used together with mouseup() event.
+
+
+----------------
+
+jQuery mouseup()
+The mouseup() method adds an event handler function to an HTML element. 
+This function is executed, when the left mouse button is released after pressing mouse button on the HTML element.
+
+The mouseup () event occurs when you release the pressed button of your mouse over a selected element.
+Once the mouseup() event is occurred it executes the mouseup() method attached with a function to run.
